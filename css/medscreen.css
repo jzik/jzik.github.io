@@ -48,13 +48,14 @@ header h1{
 
 header ul{
 	
-	margin-left: 10.9em;
-	word-spacing: 2em;
+	margin-left: 8em;
+	word-spacing: 1em;
+	font-size: 1.2em;
 }
 
 header ul li{
 	
-	font-weight: bold 
+	font-weight: bold
 }
 
 header hr{
@@ -63,7 +64,6 @@ header hr{
 	margin: 0 auto;
 	
 }
-
 
 #motivation{
 	margin-top: 25px;
@@ -74,6 +74,11 @@ div#main header h1 a{
 	text-decoration: none;
 	background-color: transparent;
 	color: #ff9933;
+}
+
+header ul li a{
+	padding: 10px 5px;
+	border-radius: 3px;
 	
 }
 
@@ -83,7 +88,7 @@ h2{
 }
 
 
-#motivation, #competances{
+#motivation, #competences{
 	
 	background-color: #666666;
 }
@@ -92,7 +97,33 @@ h2{
 	margin-top: 25px;
 }
 
+#accueil
 
+html body div#main header ul li a.accueil {
+    background: none repeat scroll 0 0 #ff9933;
+    color: #e46c51;
+}
+
+
+.progress {
+    background: none repeat scroll 0 0 #f0f0f0;
+    border-radius: 3px;
+    height: 50px;
+    margin-bottom: 10px;
+     margin-left: 20px;
+    margin-right: 20px;
+}
+
+.progress .bar {
+    border-radius: 3px 0 0 3px;
+    font-size: 1.5em;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    text-indent: 20px;
+    text-transform: uppercase;
+    background: none repeat scroll 0 0 #474747;
+}
 
 
 

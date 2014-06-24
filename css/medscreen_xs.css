@@ -50,13 +50,13 @@ header h1{
 	padding-top: 0.5em;
 	font-size: 1.5em;
 	text-align: center;
-	height: 50px;
+	height: 43px;
 	vertical-align: middle;
 	background-color: #666666;
 }
 
 header ul{
-	word-spacing: 2em;
+	/*word-spacing: 1em;*/
 	height: 30px;
 	margin-top: 7px;
 	/*background-color: #666666;*/
@@ -64,11 +64,11 @@ header ul{
 
 header ul li{
 	
-	font-weight: bold 
+	/*font-weight: bold*/ 
 }
 
 header ul li a{
-	padding: 5px 20px;
+	padding: 5px 8px;
 	border-radius: 3px;
 	
 }
