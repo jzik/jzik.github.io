@@ -1,0 +1,96 @@
+@CHARSET "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: 62,5%;
+	font-family: Verdana, Arial, sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+a, a:link, a:visited{
+	text-decoration: none;
+	color: #ff9933;
+}
+
+a:hover, a:focus{
+	background-color: #ff9933;
+	color: black;
+}
+
+body {
+	
+	background-color: #666666;
+	color: #ff9933;
+	font: normal 100%;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+#main{
+	background-color: black;
+	
+}
+
+header{
+	
+	text-align: center;
+}
+
+header ul,header ul li{
+	display:inline-block;
+	
+}
+
+header h1{
+	
+	padding-top: 0.5em;
+	font-size: 1.5em;
+	text-align: center;
+	height: 50px;
+	vertical-align: middle;
+}
+
+header ul{
+	word-spacing: 2em;
+	background-color: #666666;
+}
+
+header ul li{
+	
+	font-weight: bold 
+}
+
+#motivation{
+	margin-top: 50px;
+}
+
+div#main header h1 a{
+	
+	text-decoration: none;
+	background-color: transparent;
+	color: #ff9933;
+	
+}
+
+h2{
+	text-align: center; 
+	font-size: 1em;
+}
+
+#motivation, #competances{
+	
+	background-color: #666666;
+}
+
+
+
+
+
+
+
+
+
