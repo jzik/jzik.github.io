@@ -1,91 +1,166 @@
 @CHARSET "utf-8";
 
 * {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	font-size: 62,5%;
-	font-family: Verdana, Arial, sans-serif;
-	list-style: none;
-	text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 62,5%;
+    font-family: Verdana, Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
-a, a:link, a:visited{
-	text-decoration: none;
-	color: #ff9933;
+a, a:link, a:active{
+    text-decoration: none;
+    color: #ff9933;
 }
 
-a:hover, a:focus{
-	background-color: #ff9933;
-	color: black;
+a:hover, {
+    background-color: #ff9933;
+    color: #626262;
+}
+
+.active{
+    background-color: #ff9933;
+    color: #626262;
 }
 
 body {
-	
-	background-color: #666666;
-	color: #ff9933;
-	font: normal 100%;
-	width: 960px;
-	margin: 0 auto;
-	
+    
+    background-color: #666666;
+    color: #ff9933;
+    font: normal 100%;
+    width: 960px;
+    margin: 0 auto;
+    
 }
 
 #main{
-	background-color: black;
-	
+    background-color: #666666;
+    
+}
+
+.menu_s{
+    display: none;
+    background-color: #666666;
+}
+
+header{
+    background-color: black;
+    background: radial-gradient(#474747, black );
+    height: 50px;
+    position: fixed;
+    width: 960px;
+    top: 0px;
+    z-index: 100;
 }
 
 header h1, header ul,header ul li{
-	display:inline-block;
+    display:inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
 }
 
 header h1{
-	
-	padding-top: 0.5em;
-	padding-left: 1.4em;
-	font-size: 2em;
+    
+    /*padding-top: 0.5em;*/
+    padding-left: 1.4em;
+    font-size: 2em;
 }
 
+h1 .menu_s{
+    display: none;  
+}
+
+
 header ul{
-	
-	margin-left: 10.9em;
-	word-spacing: 2em;
+    
+    margin-left: 8em;
+    word-spacing: 1em;
+    font-size: 1.2em;
 }
 
 header ul li{
-	
-	font-weight: bold 
-}
-
-header hr{
-	
-	width: 90%;
-	margin: 0 auto;
-	
+    
+    font-weight: bold
 }
 
 
 #motivation{
-	margin-top: 50px;
+    margin-top: 25px;
+}
+
+div#moi{
+        width: 100%;
+        text-align: center;
+}
+
+div#moiimg{
+    display: inline-block; 
+    width: 100%;
+    text-align: center;
+}
+
+div#moiimg img{
+    width: 100%;
+    
 }
 
 div#main header h1 a{
-	
-	text-decoration: none;
-	background-color: transparent;
-	color: #ff9933;
-	
+    
+    text-decoration: none;
+    background-color: transparent;
+    color: #ff9933;
 }
 
-h2{
-	text-align: center; 
+header ul li a{
+    padding: 10px 5px;
+    border-radius: 3px;
+    
+}
+
+#motivation h2{
+    text-align: center; 
+    margin-top: 75px;
 }
 
 
+#motivation, #competences{
+    
+    background-color: #666666;
+}
 
+#motivation{
+    margin-top: 25px;
+}
 
+#competences p#c1, #competences p#c2 {
+    
+    padding: 10px;
+    background-color: #cccccc;
+    color: black;
+}
 
+.progress {
+    background: none repeat scroll 0 0 #f0f0f0;
+    width: 75%;
+    border-radius: 3px;
+    /*height: 50px;*/
+    margin: 5px auto;
+    position: relative;
+}
 
-
+.progress .bar {
+    display: inline-block;
+    border-radius: 3px 0 0 3px;
+    font-size: 1.5em;
+    line-height: 50px;
+    text-align: left;
+    text-indent: 20px;
+    background: none repeat scroll 0 0 #474747;
+}
 
 
