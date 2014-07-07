@@ -1,13 +1,12 @@
 Patrice PERRET - CV Online
 ==========================
 
-Ce CV a été réalisé dans le cadre d'un TP responsive design.
+Ce CV est responsive design.
 
 Les technologies utilisées sont html5, css3, jQuery.
 
 
 ##Objectifs
-
 
 - Présenter mes compétences professionnelles dans le domaine du web
 - Optimiser la navigation sur différents supports
@@ -28,7 +27,6 @@ $( "#bth, #logo" ).click(function() {
 	$("#bth").addClass('active');
 });
 ```
-
 
 ##Responsive design
 
