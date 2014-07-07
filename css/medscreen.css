@@ -1,13 +1,33 @@
-@CHARSET "utf-8";
+@charset "utf-8";
+
+/* ********* */
+/* RESET CSS */
+/* ********* */
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-size: 62,5%;
-    font-family: Verdana, Arial, sans-serif;
+    font-size: 100%;
+    font-family: Roboto, Arial, sans-serif;
     list-style: none;
     text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ******************* */
+/* PARAMETRES GENERAUX */
+/* ******************* */
+
+body {
+    color: #ff9933;
+    width: 960px;
+    margin: 0 auto;
+    background-image: url(../img/fond11.jpg);
+    background-attachment: fixed;
 }
 
 a, a:link, a:active{
@@ -30,73 +50,158 @@ a[id^="bc"]:hover {
     color: white;
 }
 
-body {
-    
-    background-color: #666666;
-    color: #ff9933;
-    font: normal 100%;
-    width: 960px;
-    margin: 0 auto;
-    
-}
 
-#main{
-    background-color: #666666;
-    
-}
-
-.menu_s{
-    display: none;
-    background-color: #666666;
-}
+/* ************* */
+/*    HEADER     */
+/* ************* */
 
 header{
-    background-color: black;
     background: radial-gradient(#474747, black );
     height: 50px;
     width: 960px;
     position: fixed;
-    top: 0px;
+    top: 10px;
     z-index: 100;
+	border-radius: 5px 5px 0 0;
 }
 
-header h1, header ul,header ul li{
+header h1, header ul#menu, header ul#menu li{
     display:inline-block;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 42%;
+    transform: translate(0,-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
 }
 
 header h1{
-    
-    /*padding-top: 0.5em;*/
     padding-left: 1.4em;
     font-size: 2em;
+    position: relative;
 }
 
-h1 .menu_s{
-    display: none;  
-}
-
-
-header ul{
-    
-    margin-left: 8em;
+header ul#menu{
+    margin-left: 6em;
     word-spacing: 1em;
     font-size: 1.2em;
 }
 
-header ul li{
-    
-    font-weight: bold
+header ul#menu li{
+   font-weight: bold
+}
+
+div#main header h1 a{
+    text-decoration: none;
+    background-color: transparent;
+    color: #ff9933;
+}
+
+header ul#menu li a{
+    padding: 5px 1px;
+    border-radius: 3px;
+}
+
+header a#contact img{ 
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+	-webkit-transform: translate(0,-50%);
+    margin-left: 20px;
+    border: none;
+}
+
+header a#contact {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* ************* */
+/* Social links */
+/* ************* */
+
+.social-links  {
+	margin-top: 15px;
+	margin-right: 4px;
+	float: right;
+}
+.social-links ul{
+  font-size: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 
+.ie67 .social-links li {
+   display: inline;
+    zoom: 1;
+}
+
+.social-links a {
+  display: block;
+  width: 30px;
+  height: 34px;
+  background-image: url("../img/sprite_sl.jpg");
+  background-repeat:no-repeat;
+}
+
+.social-links a.facebook {
+  background-position: 0 0;
+}
+
+.social-links a.pinterest {
+  background-position: -68px 0;
+}
+
+.social-links a.twitter {
+  background-position: -34px 0;
+}
+
+.social-links a.linkedin {
+  background-position: -102px 0;
+}
+
+
+/* ************** */
+/*   MOTIVATION   */
+/* ************** */
+
+#motivation, #competences, #portfolio, #contact_c{
+    
+    background-color: #E6E6E6;
+    position: relative;
+    top: 6.688em; /* 60px */
+    padding-bottom: 100px;
+}   
+
+#motivation h2{
+    text-align: center;
+    font-size: 5em;
+    padding-top: 60px;
+}
+
+#motivation h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+#motivation > p{
+    width: 90%;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 85px auto 0;
+    background-color: #1C1C1C;
+    line-height: 1.6em;
+}
+
 div#moi{
-        width: 100%;
-        text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 div#moiimg{
@@ -104,40 +209,43 @@ div#moiimg{
 }
 
 div#moiimg img{
-    width: 80%;
-    
+    width: 90%;
 }
 
-div#main header h1 a{
-    
-    text-decoration: none;
-    background-color: transparent;
-    color: #ff9933;
+div#qrcode h3#vm{
+    font-size: 0.9em;
+    margin-top: 60px;
+    margin-left: 31px;
+    text-align: left;
 }
 
-header ul li a{
-    padding: 10px 5px;
-    border-radius: 3px;
-    
-}
-
-#motivation h2{
-    text-align: center; 
- }
-
-
-#motivation, #competences{
-    
-    background-color: #666666;
-    position: relative;
-    top: 55px;
-}
-
-#motivation{
+div#qrcode{
+    width: 100%;
     margin-top: 25px;
 }
 
-#competences p#c1, #competences p#c2 {
+div#qrcode{
+    display: inline-block; 
+}
+
+div#qrcode img{
+    width: 10%;
+    padding-left: 30px;
+    margin-bottom: -60px;
+}
+
+#cv{
+    float: right;
+    margin-right: 30px;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* *************  */
+/*  COMPETENCES   */
+/* *************  */
+
+#competences p#c1, #competences p#c2, #competences p#c3 {
     
     padding: 10px;
     background-color: #cccccc;
@@ -145,22 +253,26 @@ header ul li a{
 }
 
 #competences h2{
-    display: inline-block;
     width: 80%;
     margin: 0 auto;
     text-align: center;
     background-color: white;
-    
- }
+    position: relative;
+    top: 60px;
+    line-height: 45px;
+    font-size: 1.5em;
+}
+
 
 
 .progress {
     background: none repeat scroll 0 0 #f0f0f0;
-    width: 75%;
+    width: 80%;
     border-radius: 3px;
     /*height: 50px;*/
     margin: 5px auto;
     position: relative;
+    top: 60px;
 }
 
 .progress .bar {
@@ -173,4 +285,131 @@ header ul li a{
     background: none repeat scroll 0 0 #474747;
 }
 
+.progress ul {
+    padding: 10px 0 10px 20px;
+    margin-left: 20px;
+    color: black;
+}
 
+.progress ul li{
+    list-style: square;
+}
+/* ***********  */
+/*  PORTFOLIO   */
+/* ***********  */
+
+#portfolio{
+    
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}    
+
+#portfolio h2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top: 60px;
+    line-height: 45px;
+    font-size: 1.5em;
+}
+
+div.site{
+    width: 100%;
+    margin: 40px  auto;
+    position: relative;
+    top: 50px;
+}
+
+div#jzik{
+     top: 60px;
+}
+
+div.portfolio_site{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+div.portfolio_img img{
+    width: 25%;
+    position: relative;
+    float: left;
+    padding: 20px 20px;
+}
+
+div.portfolio_txt{
+    width: 65%;
+    background-color: #CCC;
+    position: relative;
+    top: 20px;
+    float: right;
+    padding: 8px;;
+    margin-right: 20px;
+    color: black;
+    text-align: left;
+    height: 11em;
+}
+
+div#patguitar h3, div#jzik h3, div#artmetal h3, div#lola h3{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+div.portfolio_txt p{
+    width: 90%;
+    background-color: #CCC;
+    padding: 18px 20px 0;
+    color: black;
+    text-align: left;
+    height: 7em;
+    font-size: 0.9em;
+}
+
+
+/* ************* */
+/*    FOOTER     */
+/* ************* */
+
+footer{
+    position: relative;
+    top: 100px;
+    text-align: center;
+	background-color: #666;
+}
+
+footer#contact_c{
+    
+}
+
+footer#contact_c h2 {
+    background-color: white;
+    font-size: 1.5em;
+    line-height: 45px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 60px;
+    width: 80%;
+}
+
+footer#contact_c p#cc3, footer#contact_c p#cc4{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #CCC;
+    padding: 80px 20px 0;
+    color: black;
+    text-align: left;
+    height: 7em;
+    font-size: 0.9em;
+}
+
+footer#contact_c p#cc4{
+    padding-top: 0;
+}

@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	font-size: 62,5%;
 	font-family: Verdana, Arial, sans-serif;
 	list-style: none;
 	text-decoration: none;
@@ -32,11 +31,15 @@ a:hover {
     color: #626262;
 }
 
+a[id^="bc"]:hover {
+    background-color: #ff9933;
+    color: white;
+}
+
 body {
 	
 	background-color: #666666;
 	color: #ff9933;
-	font: normal 100%;
 	width: 100%;
 	margin: 0 auto;
 	
@@ -107,6 +110,12 @@ header ul li a{
 	
 }
 
+header a#contact {
+    
+    display: none;
+}
+
+
 #motivation p{
 	position: relative;
 	top: 15px;
@@ -116,11 +125,9 @@ header ul li a{
 }
 
 div#main header h1 a{
-	
 	text-decoration: none;
 	background-color: transparent;
 	color: #ff9933;
-	
 }
 
 #motivation h2{
@@ -128,7 +135,6 @@ div#main header h1 a{
 	font-size: 1.2em;
 	position: relative;
 	top: 15px;
-	
 }
 
 #motivation, #competences{
@@ -199,7 +205,46 @@ div#moiimg img{
     background: none repeat scroll 0 0 #474747;
 }
 
+/* ************* */
+/*    FOOTER     */
+/* ************* */
 
+footer{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    background-color: #666;
+}
+
+footer#contact_c{
+    
+}
+
+footer#contact_c h2 {
+    background-color: white;
+    font-size: 1.5em;
+    line-height: 45px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 60px;
+    width: 80%;
+}
+
+footer#contact_c p#cc3, footer#contact_c p#cc4{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #CCC;
+    padding: 80px 20px 0;
+    color: black;
+    text-align: left;
+    height: 7em;
+    font-size: 0.9em;
+}
+
+footer#contact_c p#cc4{
+    padding-top: 0;
+}
 
 
 

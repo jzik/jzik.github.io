@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <title>Patrice - LPATC15</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<!--  <script src="js/jquery.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,500' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link rel="stylesheet" media="screen and (min-width: 961px)" href="css/medscreen.css" type="text/css" />
+
+<link rel="stylesheet" media="screen and (min-width: 961px)" href="css/medscreen.css" type="text/css" /> 
 <link rel="stylesheet" media="screen and (min-width: 641px) and (max-width: 960px)" href="css/medscreen_s.css" type="text/css" />
 <link rel="stylesheet" media="screen and (max-width: 640px)" href="css/medscreen_xs.css" type="text/css" />
 </head>
@@ -15,94 +16,268 @@
 <div id="main">
 	<header>
 		<!--  <h1><span><a href="#">Patrice_PERRET.cv</a><img class="menu_s" src="./svg/untitled.svg" /></span></h1>-->
-		<h1><a href="#">Patrice_PERRET.cv</a></h1>
-		<ul class="menu ">
+		<h1 id="logo"><a href="#">Patrice-PERRET.cv</a></h1>
+		<ul id="menu">
 			<li><a href="#" id="bth" tabindex="0">Accueil</a></li>
-			<li><a href="#competences" id="btcv" tabindex="1">CV</a></li>
-			<li><a href="#" tabindex="2">Portfolio</a></li>
-			<li><a href="#" tabindex="3">Contact</a></li>
+			<li><a href="#competences" id="btcomp" tabindex="1">Compétences</a></li>
+			<li><a href="#portfolio" id="btportfolio" tabindex="2">Portfolio</a></li>
 		</ul>
-	
+		<a href="#contact_c" id="contact"><img src="./img/contact_s.png" alt="Contact"/></a>
+		<ul class="social-links">
+			<li><a href="http://www.facebook.com" class="facebook"></a></li>
+			<li><a href="#" class="pinterest"></a></li>
+			<li><a href="#" class="twitter"></a></li>
+			<li><a href="#" class="linkedin"></a></li>
+		</ul>
 	</header>
-<section id="motivation">
-	<h2 class="s_titre">Chef de projet Web<br />Intégrateur  Développeur</h2>
-	<p>	Passionné par les technologies du web, avide d’apprendre
-	et d’entreprendre, je franchi le pas d’une reconversion
-	professionnelle  dans le développement web. 
-	</p>
-	<div id="moi">
-		<div id="moiimg">
-			<img src="img/moi.jpg" alt="Photo de Patrice PERRET" />
+	<section id="motivation">
+		<h2 class="s_titre">Chef de projet Web</h2>
+		<h3>Intégrateur développeur Frontend / Backend</h3>
+			<p>
+				Ma motivation, mes compétences et mon expérience au service de vos projets
+			</p>
+		<div id="moi">
+			<div id="moiimg">
+				<img src="img/moi2.jpg" alt="Photo de Patrice PERRET" />
+			</div>
 		</div>
-	</div>
-</section>
-<section id="competences">
-<h2>Compétences</h2>
-<div class="progress">
-	<a href="#" id="bc1"><span style="width: 85%;" class="bar">Ingénierie du web &#9660;</span></a>
-	<p id="c1">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
- in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
- sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+		<div id="qrcode">
+			<h3 id="vm">Version mobile</h3>
+			<div id="qrcodeimg">
+				<img src="./img/qrcode.jpg" alt="Qrcode d'accès à la version mobile" />
+			</div>
+		</div>
+		<div id="cv">
+			CV à télécharger  <a href="#"><img id="pdf" src="img/pdf_s.png" alt="CV - Curiculum viate de Patrice PERRET format pdf à télécharger" title="CV - Curriculum vitae de Patrice PERRET format pdf"/></a>
+		</div>
+	</section>
+	<section id="competences">
+		<h2>Compétences</h2>
+		<div class="progress">
+			<a href="#" id="bc1"><span style="width: 85%;" class="bar">Ingénierie du web &#9660;</span></a>
+			
+				<ul id="c1">
+					<li>Très bonne connaissance de l'ingénierie du web</li>
+					<li>Gestion des noms de domaines (dns)</li>
+					<li>Technologies réseaux</li>
+					<li>Solution d'hébergement / clustering</li>
+					<li>Système d'information</li>
+					<li>Sécurité du Système d'Information</li>
+					<li>Technologies mobiles</li>
+					<li>Programmation orienté objet, API</li>
+					<li>Référencement naturel et payant</li>
+					<li>Web analytique</li>
+					<li>Cloud / Outils de travail collaboratif</li>
+					<li>Community management</li>
+					<li>@learning</li>
+					<li>Gestionnaire de contenu - CMS</li>
+				</ul>
+			</div>
+		<div class="progress">
+			<a href="#" id="bc2"><span style="width: 85%;" class="bar">Gestion de projet &#9660;</span></a>
+				<ul id="c2">
+					<li>Management de projet</li>
+					<li>Maîtrise d'ouvrage / d'oeuvre (web)</li>
+					<li>Méthode eXtreme programming</li>
+					<li>Ergonomie</li>
+					<li>Cahier des charges</li>
+					<li>Modélisation de projet</li>
+				</ul>
+			</div>
+		<div class="progress">
+			<a href="#" id="bc3"><span style="width: 75%;" class="bar">Développement web &#9660;</span></a>
+			<ul id="c3">
+					<li>Développement PHP, procédural, POO</li>
+					<li>Framework PHP (Symfony, CodeIgniter)</li>
+					<li>Javascript et bibliothèques</li>
+					<li>Intégration Html5, css3, Javascript</li>
+					<li>XML, XSL, XSLT</li>
+					<li>Développement mobile</li>
+					<li>Responsive design</li>
+					<li>Validation W3C</li>
+					<li>Sécurité des sites web</li>
+					<li>Accessibilité</li>
+					<li>Outils de développement / debug</li>
+				</ul>
+		</div>
+		<div class="progress">
+			<a href="#" id="bc4"><span style="width: 75%;" class="bar">Migration et refonte de site &#9660;</span></a>
+			<ul id="c4">
+					<li>Changement d'hébergement</li>
+					<li>Récupération de données</li>
+					<li>Refonte de site</li>
+					<li>Ajout de nouvelles fontionnalités</li>
+					<li>Optimisation / Correction de bug</li>
+					<li>Responsive design</li>
+					<li>Validation W3C</li>
+					<li>Sécurisation de site web</li>
+					<li>Accessibilité</li>
+				</ul>
+		</div>
+		<div class="progress">
+			<a href="#" id="bc5"><span style="width: 50%;" class="bar">Administration de serveur web &#9660;</span></a>
+			<ul id="c5">
+					<li>Installation / Configuration (Debian)</li>
+					<li>Ligne de commande</li>
+					<li>Serveur LAMP</li>
+					<li>Sécurité</li>
+					<li>Taches CRON</li>
+					<li>Sauvegarde / rsync</li>
+					<li>Script shell</li>
+					<li>Veille technologique</li>
+					<li>Veille sécuritaire</li>
+					<li>Panel d'administration</li>
+					</ul>
+		</div>
+	</section>
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		<div id="patguitar">
+			<div class="portfolio_site">
+			<div class="portfolio_img">
+				<img src="./img/patguitar.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
+			</div>
+			<div class="portfolio_txt">
+			<h3>Patguitar</h3>
+			<p>
+				Site de vente de guitares de collection.<br />
+				html / css / javascript, pas de base de données<br />
+				Développé en 2006<br />
+				En cours de refonte. 
+			 </p>
+			</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div id="jzik">
+			<div class="portfolio_site">
+			<div class="portfolio_img">
+				<img src="./img/jzik.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
+			</div>
+			<div class="portfolio_txt">
+			<h3>Jzik</h3>
+			<p>
+				Site @commerce de petites annonces spécialisées musique.<br />
+				Paiement en ligne (CIC / Paypal)<br />
+				html / css / php / mysql / javascript<br />
+				Développé avec le framework Symfony en 2007<br />
+				En cours de refonte. 
+			 </p>
+			</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div id="artmetal">
+			<div class="portfolio_site">
+			<div class="portfolio_img">
+				<img src="./img/artmetal.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
+			</div>
+			<div class="portfolio_txt">
+			<h3>Art Metal Nîmes</h3>
+			<p>
+				Site vitrinne pour une ferronerie / métallerie.<br />
+				html5 / css3 / php5 / mysql / jQuery<br />
+				Développé avec le framework CodeIgniter en 2012<br />
+			</p>
+			</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div id="lola">
+			<div class="portfolio_site">
+			<div class="portfolio_img">
+				<img src="./img/lola.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
+			</div>
+			<div class="portfolio_txt">
+			<h3>Lola (LOgistique LAboratoire)</h3>
+			<p>
+				Outil de travail collaboratif du laboratoire CNRS Géosciences de Montpellier.<br />
+				xhtml 1.0 strict / css3 / php5 / mysql / jQuery<br />
+				Développé avec le framework CodeIgniter en 2011<br />
+				Gestion des demandes d'achat, mission, facturation et l'inventaire.<br />
+				Maintenance et évolution assuré par mes soins depuis 08/2011.
+			</p>
+			</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</section>
+	<footer id="contact_c">
+	
+		<h2>Pour me contactez !</h2>
+		<div>
+			<p id="cc3">
+			Patrice PERRET<br />
+			1249 route de Lunel<br />
+			34400 Villetelle<br />
+			</p>
+			<p id="cc4">
+			Mobile : 06 09 11 59 81<br />
+			Professionnel : 04 67 14 41 54<br />
+			Courriel : hp.perret [@] gmail.com<br />
+			</p>
+		</div>
+	</footer>
 </div>
-<div class="progress">
-	<a href="#" id="bc2"><span style="width: 75%;" class="bar">Développement web &#9660;</span></a>
-	<p id="c2">
-PARA 2 -Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
- in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
- sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-</div>
-
-<div class="progress">
-	<div style="width: 55%;" class="bar"> Javascript / jQuery </div>
-</div>
-
-</section>
-
-<footer>
-</footer>
-</div>
-
 
 <script type="text/javascript"> 
 
 $(document).ready(function(){
 	$("#bth").trigger("click");
-	$("p#c1").hide();
-	$("p#c2").hide();
+	//$("#bth").addClass('active');
+	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5").hide();
 });
 
-$("ul[class^=menu] a").click(function(){
-	 $('.menu .active').removeClass('active');
+$("ul[id^=menu] a").click(function(){
+	 $('#menu .active').removeClass('active');
 	 $(this).addClass('active');
 });
 
-$( "#bth" ).click(function() {
+$( "#bth, #logo" ).click(function() {
 	$( "#motivation" ).show( 500 );
+	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5").hide();
+	$('#menu .active').removeClass('active');
+	$("#bth").addClass('active');
 });
 
-$( "#btcv" ).click(function() {
-	$( "#motivation" ).hide( 500 );
+$( "#btcomp" ).click(function() {
+	$( "#competences" ).show( 500 );
+	$( "#motivation, #portfolio, #contact_c, #c3" ).hide(500);
+});
+
+$( "#btportfolio" ).click(function() {
+	$( "#portfolio" ).show( 500 );
+	$( "#motivation, #competences, #contact_c, #c3" ).hide(500);
 });
 
 $( "#bc1" ).click(function() {
-	$( "p#c1" ).toggle( "slow" );
+	$( "ul#c1" ).toggle( "slow" );
 	$( "#motivation" ).hide( 500 );
-	$("#btcv").trigger("click");
+	$("#btcomp").trigger("click");
 });
 
 $( "#bc2" ).click(function() {
-	$( "p#c2" ).toggle( "slow" );
+	$( "ul#c2" ).toggle( "slow" );
+});
+
+$( "#bc3" ).click(function() {
+	$( "ul#c3" ).toggle( "slow" );
+});
+
+$( "#bc4" ).click(function() {
+	$( "ul#c4" ).toggle( "slow" );
+});
+
+$( "#bc5" ).click(function() {
+	$( "ul#c5" ).toggle( "slow" );
+});
+
+$( "#contact" ).click(function() {
+	$( "#motivation, #competences, #portfolio" ).hide( 500 );
+	$( "#contact_c, #cc3" ).show( 500 );
+	$('#menu .active').removeClass('active');
 });
 
 </script>
-
-
 </body>
 </html>

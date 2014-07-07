@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	font-size: 62,5%;
+	font-size: 100%;
 	font-family: Verdana, Arial, sans-serif;
 	list-style: none;
 	text-decoration: none;
@@ -24,7 +24,6 @@ body {
 	
 	background-color: #666666;
 	color: #ff9933;
-	font: normal 100%;
 	width: 100%;
 	margin: 0 auto;
 	
@@ -111,7 +110,28 @@ div#moiimg{
 
 div#moiimg img{
     width: 100%;
+}
     
+div#qrcode h3#vm{
+    font-size: 0.9em;
+    margin-top: 60px;
+    margin-left: 31px;
+    text-align: left;
+}
+
+div#qrcode{
+    width: 100%;
+    margin-top: 25px;
+}
+
+div#qrcode{
+    display: inline-block; 
+}
+
+div#qrcode img{
+    width: 10%;
+    padding-left: 30px;
+    margin-bottom: -60px;
 }
 /*
 .progress {
@@ -160,6 +180,46 @@ div#moiimg img{
     background: none repeat scroll 0 0 #474747;
 }
 
+/* ************* */
+/*    FOOTER     */
+/* ************* */
+
+footer{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    background-color: #666;
+}
+
+footer#contact_c{
+    
+}
+
+footer#contact_c h2 {
+    background-color: white;
+    font-size: 1.5em;
+    line-height: 45px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 60px;
+    width: 80%;
+}
+
+footer#contact_c p#cc3, footer#contact_c p#cc4{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #CCC;
+    padding: 80px 20px 0;
+    color: black;
+    text-align: left;
+    height: 7em;
+    font-size: 0.9em;
+}
+
+footer#contact_c p#cc4{
+    padding-top: 0;
+}
 
 
 
