@@ -20,6 +20,15 @@ a:hover, a:focus{
 	color: black;
 }
 
+.active{
+    background-color: #ff9933;
+    color: #626262;
+}
+
+.clearfix{
+    clear: both;
+}
+
 body {
 	
 	background-color: #666666;
@@ -29,20 +38,23 @@ body {
 	
 }
 
-#main{
-	background-color: black;
-	
-}
+/* ************* */
+/*    HEADER     */
+/* ************* */
 
 header{
 	
 	text-align: center;
 	height: 100px;
+	position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #666;
 }
 
-header ul,header ul li{
+header ul li{
 	display:inline-block;
-	
 }
 
 header h1{
@@ -50,16 +62,16 @@ header h1{
 	padding-top: 0.5em;
 	font-size: 1.5em;
 	text-align: center;
-	height: 50px;
+	height: 45px;
 	vertical-align: middle;
 	background-color: #666666;
 }
 
-header ul{
-	/*word-spacing: 2em;*/
+header ul#menu{
 	height: 26px;
-	margin-top: 7px;
-	/*background-color: #666666;*/
+	margin-top: 10px;
+	background-color: black;
+    padding: 12px;
 }
 
 header ul li{
@@ -67,10 +79,25 @@ header ul li{
 	font-weight: bold 
 }
 
-header ul li a{
+header ul#menu li a{
 	padding: 5px 20px;
 	border-radius: 3px;
 	
+}
+
+header a#contact img{ 
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0,-50%);
+    margin-left: 20px;
+    border: none;
+}
+
+header a#contact {
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .menu_s{
@@ -86,15 +113,108 @@ div#main header h1 a{
 	
 }
 
-h2.s_titre{
-	text-align: center; 
-	font-size: 1em;
-	padding-top: 18px; 
+
+
+/* ************* */
+/* Social links */
+/* ************* */
+
+.social-links  {
+    margin: 10px 15px 0 0;
+    text-align: right;
+    display: block;
+/*float: right;**/
+}
+.social-links ul{
+  font-size: 0;
 }
 
-#motivation, #competences{
-	
-	background-color: #666666;
+/*
+.social-links li {
+  display: inline-block;
+  margin-right: 5px;
+}
+*/
+
+
+.ie67 .social-links li {
+   display: inline;
+    zoom: 1;
+}
+
+.social-links a {
+  display: block;
+  width: 30px;
+  height: 34px;
+  background-image: url("../img/sprite_sl.jpg");
+  background-repeat: no-repeat;
+}
+
+.social-links a.facebook {
+  background-position: 0 0;
+}
+
+.social-links a.pinterest {
+  background-position: -68px 0;
+}
+
+.social-links a.twitter {
+  background-position: -34px 0;
+}
+
+.social-links a.linkedin {
+  background-position: -102px 0;
+}
+
+
+/* ************** */
+/*   MOTIVATION   */
+/* ************** */
+
+
+#motivation, #competences, #portfolio, #contact_c{
+    
+    background-color: #E6E6E6;
+    position: relative;
+    top: 6.60em; /* 100px */
+    padding-top: 30px;
+    padding-bottom: 100px;
+    
+}   
+
+
+h2.s_titre{
+    text-align: center; 
+    font-size: 3.4em;
+    padding-top: 60px; 
+}
+
+#br{
+        display: none;
+    }
+    
+
+#motivation h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#motivation > p{
+    width: 90%;
+    font-size 0.8em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 85px auto 0;
+    background-color: #1C1C1C;
+    line-height: 1.6em;
+}
+
+@media (max-width: 671px) {
+ 
+    #motivation > p {
+     font-size: 0.81em;   
+    }    
 }
 
 div#moi{
@@ -104,18 +224,17 @@ div#moi{
 
 div#moiimg{
     display: inline-block; 
-    width: 100%;
-    text-align: center;
 }
 
 div#moiimg img{
-    width: 100%;
+    width: 90%;
 }
-    
+
+
 div#qrcode h3#vm{
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin-top: 60px;
-    margin-left: 31px;
+    margin-left: 29px;
     text-align: left;
 }
 
@@ -133,51 +252,278 @@ div#qrcode img{
     padding-left: 30px;
     margin-bottom: -60px;
 }
-/*
-.progress {
-    background: none repeat scroll 0 0 #f0f0f0;
-    border-radius: 3px;
-    height: 50px;
-    margin-bottom: 10px;
-     margin-left: 20px;
-    margin-right: 20px;
+
+#cv{
+    float: right;
+    margin-right: 30px;
+    color: #666;
+    margin-top: 30px;
 }
 
-.progress .bar {
-    border-radius: 3px 0 0 3px;
-    font-size: 1.5em;
-    height: 50px;
-    line-height: 50px;
-    text-align: left;
-    text-indent: 20px;
-    text-transform: uppercase;
-    background: none repeat scroll 0 0 #474747;
- }
- */
- #competences p#c1, #competences p#c2 {
+/* *************  */
+/*  COMPETENCES   */
+/* *************  */
+
+a[id^="bc"]:hover, a[id^="bc"]:focus{
+    background-color: #ff9933;
+    color: white;
+}
+
+#competences p#c1, #competences p#c2 {
     
     padding: 10px;
     background-color: #cccccc;
     color: black;
 }
 
+#competences h2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top: 60px;
+    line-height: 45px;
+    font-size: 1.5em;
+}
+
+
 .progress {
     background: none repeat scroll 0 0 #f0f0f0;
-    width: 75%;
+    width: 80%;
     border-radius: 3px;
     /*height: 50px;*/
     margin: 5px auto;
     position: relative;
+    top: 60px;
 }
 
 .progress .bar {
     display: inline-block;
     border-radius: 3px 0 0 3px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 50px;
     text-align: left;
     text-indent: 20px;
     background: none repeat scroll 0 0 #474747;
+}
+
+   a#bc1 span#comp1{
+    
+        width: 85%;
+    }
+
+    a#bc2 span#comp2{
+        width: 85%;
+    }
+
+    a#bc3 span#comp3{
+        width: 75%;
+    }
+
+    a#bc4 span#comp4{
+        width: 75%;
+    }
+
+    a#bc5 span#comp5{
+        width: 65%;
+    }
+
+ .progress ul {
+    padding: 10px 0 10px 20px;
+    margin-left: 20px;
+    color: black;
+}
+
+.progress ul li{
+    list-style: square;
+}
+
+ 
+/* ***********  */
+/*  PORTFOLIO   */
+/* ***********  */
+
+#portfolio{
+    
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}    
+
+#portfolio > h2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top: 60px;
+    line-height: 45px;
+    font-size: 1.5em;
+}
+
+div.site{
+    width: 100%;
+    margin: 40px  auto;
+    position: relative;
+    top: 50px;
+}
+
+div#jzik{
+     top: 60px;
+}
+
+div.portfolio_site{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+div.portfolio_img img{
+    width: 195px;
+    position: relative;
+    float: left;
+    padding: 20px 20px;
+}
+
+div.portfolio_txt{
+    width: 60%;
+    background-color: #CCC;
+    position: relative;
+    top: 20px;
+    float: right;
+    padding: 8px;;
+    margin-right: 20px;
+    color: black;
+    text-align: left;
+    height: 11em;
+}
+
+div#patguitar h3, div#jzik h3, div#artmetal h3, div#lola h3{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+div.portfolio_txt p{
+    width: 90%;
+    background-color: #CCC;
+    padding: 18px 20px 0;
+    color: black;
+    text-align: left;
+    height: 7em;
+    font-size: 0.9em;
+}
+
+@media (min-width: 660px) and (max-width: 860px) {
+    
+    
+     div.portfolio_txt{
+         float: none; 
+         width: 97%;
+     }
+     
+    div.portfolio_img img {
+        width: 129px;
+        position: relative;
+        float: left;
+        padding: 68px 37px;
+        z-index: 1;
+    }
+    
+    div.portfolio_txt p{
+        width: 90%;
+        background-color: #CCC;
+        padding: 18px 20px 0;
+        color: black;
+        text-align: left;
+        height: 7em;
+        font-size: 0.9em;
+    }
+    
+    .progress {
+        background: none repeat scroll 0 0 #f0f0f0;
+        width: 80%;
+        border-radius: 3px;
+        /*height: 50px;*/
+        margin: 5px auto;
+        position: relative;
+        top: 60px;
+    }
+    
+    .progress .bar {
+        display: inline-block;
+        border-radius: 3px 0 0 3px;
+        font-size: 1.2em;
+        line-height: 50px;
+        text-align: left;
+        text-indent: 20px;
+        background: none repeat scroll 0 0 #474747;
+        width: 100%;
+    }
+    
+    a#bc1 span#comp1{
+        width: 85%;
+    }
+
+    a#bc2 span#comp2{
+        width: 85%;
+    }
+
+    a#bc3 span#comp3{
+        width: 75%;
+    }
+
+    a#bc4 span#comp4{
+        width: 75%;
+    }
+
+    a#bc5 span#comp5{
+        width: 65%;
+    }
+    
+      
+}
+
+@media (max-width: 723px) {
+ 
+    div.portfolio_txt p {
+     font-size: 0.85em;   
+    }    
+}
+
+@media (max-width: 659px) {
+            
+    a#bc1 span#comp1, a#bc2 span#comp2, a#bc3 span#comp3, a#bc4 span#comp4, a#bc5 span#comp5{
+        width: 100%;
+    }
+    
+         div.portfolio_txt{
+         float: none; 
+         width: 97%;
+     }
+     
+    div.portfolio_img img {
+        width: 129px;
+        position: relative;
+        float: left;
+        padding: 68px 37px;
+        z-index: 1;
+    }
+    
+    div.portfolio_txt p{
+        width: 90%;
+        background-color: #CCC;
+        padding: 18px 20px 0;
+        color: black;
+        text-align: left;
+        height: 7em;
+        font-size: 0.8em;
+    }
+    
 }
 
 /* ************* */

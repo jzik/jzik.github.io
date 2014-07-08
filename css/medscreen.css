@@ -50,7 +50,6 @@ a[id^="bc"]:hover {
     color: white;
 }
 
-
 /* ************* */
 /*    HEADER     */
 /* ************* */
@@ -116,6 +115,8 @@ header a#contact {
     background-color: transparent;
 }
 
+
+
 /* ************* */
 /* Social links */
 /* ************* */
@@ -164,6 +165,41 @@ header a#contact {
   background-position: -102px 0;
 }
 
+/*
+@media (min-width: 641px) and (max-width: 960px) {
+    
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        background: radial-gradient(#474747, black );
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 10px;
+        z-index: 100;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    header h1{
+        padding-top: 0.5em;
+        font-size: 1.5em;
+        text-align: center;
+        height: 45px;
+        vertical-align: middle;
+        background-color: #666666;
+    }
+    
+    .social-links {
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: 60px;
+    }
+    
+   
+}
+*/
 
 /* ************** */
 /*   MOTIVATION   */
@@ -241,6 +277,10 @@ div#qrcode img{
     margin-top: 30px;
 }
 
+#br{
+    display: none;
+}
+
 /* *************  */
 /*  COMPETENCES   */
 /* *************  */
@@ -263,8 +303,6 @@ div#qrcode img{
     font-size: 1.5em;
 }
 
-
-
 .progress {
     background: none repeat scroll 0 0 #f0f0f0;
     width: 80%;
@@ -283,6 +321,31 @@ div#qrcode img{
     text-align: left;
     text-indent: 20px;
     background: none repeat scroll 0 0 #474747;
+}
+
+a#bc1 span#comp1{
+    
+    width: 85%;
+}
+
+a#bc2 span#comp2{
+    
+    width: 85%;
+}
+
+a#bc3 span#comp3{
+    
+    width: 75%;
+}
+
+a#bc4 span#comp4{
+    
+    width: 75%;
+}
+
+a#bc5 span#comp5{
+    
+    width: 65%;
 }
 
 .progress ul {

@@ -55,7 +55,7 @@ header{
 	text-align: center;
 	position: fixed;
 	width: 100%;
-	top: 0px;
+	bottom: 0px;
     z-index: 100;
     background-color: black;
 }
@@ -66,8 +66,8 @@ header ul,header ul li{
 }
 
 header h1{
-	display: inline-block;
-	/*padding-top: 0.3em;*/
+    position: fixed;
+    top: 0;
 	font-size: 1.4em;
 	text-align: center;
 	height: 35px;
@@ -76,36 +76,23 @@ header h1{
 	vertical-align: middle;
 }
 
-header ul.menu{
-    
-}
-
 h1 .menu_s{
     vertical-align:middle;
     padding-left: 20px;
 }
 
-.header h1 img.menu{
-	display: inline-block;
-	background-color: #666666;
-	vertical-align: middle;
-	width: 10px;
-}
-
-header ul{
-	/*word-spacing: 1em;*/
-	height: 30px;
-	margin-top: 7px;
-	/*background-color: #666666;*/
+header ul#menu{
+	margin-top: 15px;
 }
 
 header ul li{
-	
-	/*font-weight: bold*/ 
+	font-size: 0.8em;
+	height: 43px;
+	vertical-align: middle;
 }
 
 header ul li a{
-	padding: 1px 8px;
+	padding: 13px 4px 14px 4px;
 	border-radius: 3px;
 	
 }
@@ -116,13 +103,47 @@ header a#contact {
 }
 
 
-#motivation p{
-	position: relative;
-	top: 15px;
-	text-indent: 10px;
-	font-size: 13px;
-	padding: 10px;
+.social-links  {
+    display: none;
 }
+#motivation, #competences, #portfolio, #contact_c{
+    
+    background-color: #E6E6E6;
+    position: relative;
+    top: 2.188em; /* 35x */
+    padding-bottom: 140px;
+}   
+
+#motivation h2.s_titre{
+    text-align: center; 
+    font-size: 1.5em;
+    position: relative;
+    top: 35px;
+}
+
+#br{
+    display: inline;
+}
+
+
+#motivation h3{
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    top: 50px;
+}
+
+#motivation > p{
+   width: 90%;
+font-size: 0.75em;
+font-weight: bold;
+text-align: center;
+color: #FFF;
+margin: 85px auto 0px;
+background-color: #1C1C1C;
+line-height: 1.7em;
+}
+
 
 div#main header h1 a{
 	text-decoration: none;
@@ -130,24 +151,10 @@ div#main header h1 a{
 	color: #ff9933;
 }
 
-#motivation h2{
-	text-align: center; 
-	font-size: 1.2em;
-	position: relative;
-	top: 15px;
-}
-
-#motivation, #competences{
-	
-	background-color: #666666;
-	position: relative;
-	top: 70px;
-
-}
 
 div#moi{
-        width: 100%;
-        text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 div#moiimg{
@@ -155,30 +162,25 @@ div#moiimg{
 }
 
 div#moiimg img{
-    width: 80%;
-    
+    width: 90%;
 }
 
-/*
-.progress {
-    background: none repeat scroll 0 0 #f0f0f0;
-    border-radius: 3px;
-    height: 40px;
-    margin-bottom: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+div#qrcode{
+    display: none; 
 }
 
-.progress .bar {
-    border-radius: 3px 0 0 3px;
-    font-size: 1em;
-    height: 40px;
-    line-height: 40px;
-    text-align: left;
-    text-indent: 10px;
-    background: none repeat scroll 0 0 #474747;
- }
-*/
+#cv{
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/* *************  */
+/*  COMPETENCES   */
+/* *************  */
+
 #competences p#c1, #competences p#c2 {
     
     padding: 10px;
@@ -186,9 +188,20 @@ div#moiimg img{
     color: black;
 }
 
+#competences h2{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    /*top: 60px;*/
+    line-height: 45px;
+    font-size: 1.5em;
+}
+
 .progress {
     background: none repeat scroll 0 0 #f0f0f0;
-    width: 85%;
+    width: 95%;
     border-radius: 3px;
     /*height: 50px;*/
     margin: 5px auto;
@@ -198,11 +211,234 @@ div#moiimg img{
 .progress .bar {
     display: inline-block;
     border-radius: 3px 0 0 3px;
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 40px;
     text-align: left;
     text-indent: 20px;
     background: none repeat scroll 0 0 #474747;
+}
+
+ .progress ul {
+    padding: 10px 0 10px 10px;
+    margin-left: 20px;
+    color: black;
+}
+
+.progress ul li{
+    list-style: square;
+    font-size: 0.8em;
+}
+
+ a#bc1 span#comp1, a#bc2 span#comp2, a#bc3 span#comp3, a#bc4 span#comp4, a#bc5 span#comp5{
+        width: 100%;
+    }
+    
+         div.portfolio_txt{
+         float: none; 
+         width: 97%;
+     }
+     
+    div.portfolio_img img {
+        width: 129px;
+        position: relative;
+        float: left;
+        padding: 68px 37px;
+        z-index: 1;
+    }
+    
+    div.portfolio_txt p{
+        width: 90%;
+        background-color: #CCC;
+        padding: 18px 20px 0;
+        color: black;
+        text-align: left;
+        height: 7em;
+        font-size: 0.8em;
+    }
+    
+/* ***********  */
+/*  PORTFOLIO   */
+/* ***********  */
+
+#portfolio{
+    
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}    
+
+#portfolio > h2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top: 60px;
+    line-height: 45px;
+    font-size: 1.5em;
+}
+
+div.site{
+    width: 100%;
+    margin: 40px  auto;
+    position: relative;
+    top: 50px;
+}
+
+div#jzik{
+     top: 60px;
+}
+
+div.portfolio_site{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+div.portfolio_img img{
+    width: 195px;
+    position: relative;
+    float: left;
+    padding: 20px 20px;
+}
+
+div.portfolio_txt{
+    width: 60%;
+    background-color: #CCC;
+    position: relative;
+    top: 20px;
+    float: right;
+    padding: 8px;;
+    margin-right: 20px;
+    color: black;
+    text-align: left;
+    height: 11em;
+}
+
+div#patguitar h3, div#jzik h3, div#artmetal h3, div#lola h3{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+div.portfolio_txt p{
+    width: 90%;
+    background-color: #CCC;
+    padding: 18px 20px 0;
+    color: black;
+    text-align: left;
+    height: 7em;
+    font-size: 0.9em;
+}
+
+@media (min-width: 660px) and (max-width: 860px) {
+    
+     div.portfolio_txt{
+         float: none; 
+         width: 97%;
+     }
+     
+    div.portfolio_img img {
+        width: 129px;
+        position: relative;
+        float: left;
+        padding: 68px 37px;
+        z-index: 1;
+    }
+    
+    div.portfolio_txt p{
+        width: 90%;
+        background-color: #CCC;
+        padding: 18px 20px 0;
+        color: black;
+        text-align: left;
+        height: 7em;
+        font-size: 0.9em;
+    }
+    
+    .progress {
+        background: none repeat scroll 0 0 #f0f0f0;
+        width: 80%;
+        border-radius: 3px;
+        /*height: 50px;*/
+        margin: 5px auto;
+        position: relative;
+        top: 60px;
+    }
+    
+    .progress .bar {
+        display: inline-block;
+        border-radius: 3px 0 0 3px;
+        font-size: 1.2em;
+        line-height: 50px;
+        text-align: left;
+        text-indent: 20px;
+        background: none repeat scroll 0 0 #474747;
+        width: 100%;
+    }
+    
+    a#bc1 span#comp1{
+        width: 85%;
+    }
+
+    a#bc2 span#comp2{
+        width: 85%;
+    }
+
+    a#bc3 span#comp3{
+        width: 75%;
+    }
+
+    a#bc4 span#comp4{
+        width: 75%;
+    }
+
+    a#bc5 span#comp5{
+        width: 65%;
+    }
+    
+      
+}
+
+@media (max-width: 723px) { /* Ajustement du texte sur le p du portfolio */ 
+ 
+    div.portfolio_txt p {
+     font-size: 0.85em;   
+    }    
+}
+
+@media (max-width: 659px) { /* modification de l'affichage sur les bar progress pour les petits écrans */
+            
+    a#bc1 span#comp1, a#bc2 span#comp2, a#bc3 span#comp3, a#bc4 span#comp4, a#bc5 span#comp5{
+        width: 100%;
+    }
+    
+         div.portfolio_txt{
+         float: none; 
+         width: 97%;
+     }
+     
+    div.portfolio_img img {
+        width: 129px;
+        position: relative;
+        float: left;
+        padding: 68px 37px;
+        z-index: 1;
+    }
+    
+    div.portfolio_txt p{
+        width: 90%;
+        background-color: #CCC;
+        padding: 18px 20px 0;
+        color: black;
+        text-align: left;
+        height: 7em;
+        font-size: 0.8em;
+    }
+    
 }
 
 /* ************* */
@@ -222,7 +458,7 @@ footer#contact_c{
 
 footer#contact_c h2 {
     background-color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 45px;
     margin: 0 auto;
     position: relative;

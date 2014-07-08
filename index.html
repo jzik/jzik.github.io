@@ -7,8 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,500' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<link rel="stylesheet" media="screen and (min-width: 961px)" href="css/medscreen.css" type="text/css" /> 
+<link rel="stylesheet" media="screen and (min-width: 961px)" href="css/medscreen.css" type="text/css" />  
 <link rel="stylesheet" media="screen and (min-width: 641px) and (max-width: 960px)" href="css/medscreen_s.css" type="text/css" />
 <link rel="stylesheet" media="screen and (max-width: 640px)" href="css/medscreen_xs.css" type="text/css" />
 </head>
@@ -21,8 +20,8 @@
 			<li><a href="#" id="bth" tabindex="0">Accueil</a></li>
 			<li><a href="#competences" id="btcomp" tabindex="1">Compétences</a></li>
 			<li><a href="#portfolio" id="btportfolio" tabindex="2">Portfolio</a></li>
+			<li><a href="#contact_c" id="btcontact" tabindex="3">Contact</a></li>
 		</ul>
-		<a href="#contact_c" id="contact"><img src="./img/contact_s.png" alt="Contact"/></a>
 		<ul class="social-links">
 			<li><a href="http://www.facebook.com" class="facebook"></a></li>
 			<li><a href="#" class="pinterest"></a></li>
@@ -30,9 +29,10 @@
 			<li><a href="#" class="linkedin"></a></li>
 		</ul>
 	</header>
+	<div class="clearfix"></div>
 	<section id="motivation">
 		<h2 class="s_titre">Chef de projet Web</h2>
-		<h3>Intégrateur développeur Frontend / Backend</h3>
+		<h3>Intégrateur développeur<span id="br"><br /></span> frontend - backend</h3>
 			<p>
 				Ma motivation, mes compétences et mon expérience au service de vos projets
 			</p>
@@ -54,10 +54,10 @@
 	<section id="competences">
 		<h2>Compétences</h2>
 		<div class="progress">
-			<a href="#" id="bc1"><span style="width: 85%;" class="bar">Ingénierie du web &#9660;</span></a>
+			<a href="#" id="bc1"><span id="comp1" class="bar">Ingénierie du web &#9660;</span></a>
 			
 				<ul id="c1">
-					<li>Très bonne connaissance de l'ingénierie du web</li>
+					<li>Maîtrise de l'ingénierie du web</li>
 					<li>Gestion des noms de domaines (dns)</li>
 					<li>Technologies réseaux</li>
 					<li>Solution d'hébergement / clustering</li>
@@ -74,7 +74,7 @@
 				</ul>
 			</div>
 		<div class="progress">
-			<a href="#" id="bc2"><span style="width: 85%;" class="bar">Gestion de projet &#9660;</span></a>
+			<a href="#" id="bc2"><span id="comp2" class="bar">Gestion de projet &#9660;</span></a>
 				<ul id="c2">
 					<li>Management de projet</li>
 					<li>Maîtrise d'ouvrage / d'oeuvre (web)</li>
@@ -85,7 +85,7 @@
 				</ul>
 			</div>
 		<div class="progress">
-			<a href="#" id="bc3"><span style="width: 75%;" class="bar">Développement web &#9660;</span></a>
+			<a href="#" id="bc3"><span id="comp3" class="bar">Développement web &#9660;</span></a>
 			<ul id="c3">
 					<li>Développement PHP, procédural, POO</li>
 					<li>Framework PHP (Symfony, CodeIgniter)</li>
@@ -98,10 +98,11 @@
 					<li>Sécurité des sites web</li>
 					<li>Accessibilité</li>
 					<li>Outils de développement / debug</li>
+					<li>Gestion de version</li>
 				</ul>
 		</div>
 		<div class="progress">
-			<a href="#" id="bc4"><span style="width: 75%;" class="bar">Migration et refonte de site &#9660;</span></a>
+			<a href="#" id="bc4"><span id="comp4" class="bar">Migration et refonte de site &#9660;</span></a>
 			<ul id="c4">
 					<li>Changement d'hébergement</li>
 					<li>Récupération de données</li>
@@ -115,7 +116,7 @@
 				</ul>
 		</div>
 		<div class="progress">
-			<a href="#" id="bc5"><span style="width: 50%;" class="bar">Administration de serveur web &#9660;</span></a>
+			<a href="#" id="bc5"><span id="comp5" class="bar">Administration de serveur web &#9660;</span></a>
 			<ul id="c5">
 					<li>Installation / Configuration (Debian)</li>
 					<li>Ligne de commande</li>
@@ -195,7 +196,6 @@
 				xhtml 1.0 strict / css3 / php5 / mysql / jQuery<br />
 				Développé avec le framework CodeIgniter en 2011<br />
 				Gestion des demandes d'achat, mission, facturation et l'inventaire.<br />
-				Maintenance et évolution assuré par mes soins depuis 08/2011.
 			</p>
 			</div>
 			</div>
@@ -223,8 +223,8 @@
 <script type="text/javascript"> 
 
 $(document).ready(function(){
-	$("#bth").trigger("click");
-	//$("#bth").addClass('active');
+	//$("#bth").trigger("click");
+	$("#bth").addClass('active');
 	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5").hide();
 });
 
@@ -272,10 +272,9 @@ $( "#bc5" ).click(function() {
 	$( "ul#c5" ).toggle( "slow" );
 });
 
-$( "#contact" ).click(function() {
+$( "#btcontact" ).click(function() {
 	$( "#motivation, #competences, #portfolio" ).hide( 500 );
 	$( "#contact_c, #cc3" ).show( 500 );
-	$('#menu .active').removeClass('active');
 });
 
 </script>
