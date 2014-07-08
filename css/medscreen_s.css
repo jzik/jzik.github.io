@@ -31,7 +31,7 @@ a:hover, a:focus{
 
 body {
 	
-	background-color: #666666;
+	background-color: #E6E6E6;
 	color: #ff9933;
 	width: 100%;
 	margin: 0 auto;
@@ -567,8 +567,20 @@ footer#contact_c p#cc4{
     padding-top: 0;
 }
 
+p.tel{
+    
+    margin-top: 7px;
+    text-align: center;
+}
 
+p.tel img{
+    width: 50px;
+}
 
+p.tel a:hover, p.tel a:link, p.tel img:hover{
+    text-decoration: none;
+    background-color: transparent;
+}
 
 
 

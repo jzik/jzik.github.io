@@ -50,6 +50,11 @@ a[id^="bc"]:hover {
     color: white;
 }
 
+p.tel a:hover, p.tel a:link, p.tel img:hover{
+    text-decoration: none;
+    background-color: transparent;
+}
+
 /* ************* */
 /*    HEADER     */
 /* ************* */
@@ -115,8 +120,6 @@ header a#contact {
     background-color: transparent;
 }
 
-
-
 /* ************* */
 /* Social links */
 /* ************* */
@@ -134,7 +137,6 @@ header a#contact {
   display: inline-block;
   margin-right: 5px;
 }
-
 
 .ie67 .social-links li {
    display: inline;
@@ -476,3 +478,14 @@ footer#contact_c p#cc3, footer#contact_c p#cc4{
 footer#contact_c p#cc4{
     padding-top: 0;
 }
+
+p.tel{
+    
+    margin-top: 7px;
+    text-align: center;
+}
+
+p.tel img{
+    width: 50px;
+}
+

@@ -135,36 +135,36 @@
 		<h2>Portfolio</h2>
 		<div id="patguitar">
 			<div class="portfolio_site">
-			<div class="portfolio_img">
-				<img src="./img/patguitar.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
-			</div>
-			<div class="portfolio_txt">
-			<h3>Patguitar</h3>
-			<p>
-				Site de vente de guitares de collection.<br />
-				html / css / javascript, pas de base de données<br />
-				Développé en 2006<br />
-				En cours de refonte. 
-			 </p>
-			</div>
+				<div class="portfolio_img">
+					<img src="./img/patguitar.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
+				</div>
+				<div class="portfolio_txt">
+					<h3><a href="#">Patguitar</a></h3>
+					<p>
+						Site de vente de guitares de collection.<br />
+						html / css / javascript, pas de base de données<br />
+						Développé en 2006<br />
+						En cours de refonte. 
+					 </p>
+				</div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
 		<div id="jzik">
 			<div class="portfolio_site">
-			<div class="portfolio_img">
-				<img src="./img/jzik.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
-			</div>
-			<div class="portfolio_txt">
-			<h3>Jzik</h3>
-			<p>
-				Site @commerce de petites annonces spécialisées musique.<br />
-				Paiement en ligne (CIC / Paypal)<br />
-				html / css / php / mysql / javascript<br />
-				Développé avec le framework Symfony en 2007<br />
-				En cours de refonte. 
-			 </p>
-			</div>
+				<div class="portfolio_img">
+					<img src="./img/jzik.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
+				</div>
+				<div class="portfolio_txt">
+					<h3><a href="#">Jzik</a></h3>
+					<p>
+						Site @commerce de petites annonces spécialisées musique.<br />
+						Paiement en ligne (CIC / Paypal)<br />
+						html / css / php / mysql / javascript<br />
+						Développé avec le framework Symfony en 2007<br />
+						En cours de refonte. 
+					 </p>
+				</div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -174,7 +174,7 @@
 				<img src="./img/artmetal.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
 			</div>
 			<div class="portfolio_txt">
-			<h3>Art Metal Nîmes</h3>
+			<h3><a href="#">Art Metal Nîmes</a></h3>
 			<p>
 				Site vitrinne pour une ferronerie / métallerie.<br />
 				html5 / css3 / php5 / mysql / jQuery<br />
@@ -185,12 +185,13 @@
 		</div>
 		<div class="clearfix"></div>
 		<div id="lola">
+		
 			<div class="portfolio_site">
 			<div class="portfolio_img">
 				<img src="./img/lola.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
 			</div>
 			<div class="portfolio_txt">
-			<h3>Lola (LOgistique LAboratoire)</h3>
+			<h3><a href="#">Lola (LOgistique LAboratoire)</a></h3>
 			<p>
 				Outil de travail collaboratif du laboratoire CNRS Géosciences de Montpellier.<br />
 				xhtml 1.0 strict / css3 / php5 / mysql / jQuery<br />
@@ -201,10 +202,11 @@
 			</div>
 		</div>
 		<div class="clearfix"></div>
+		
 	</section>
 	<footer id="contact_c">
 	
-		<h2>Pour me contactez !</h2>
+		<h2>Coordonnées</h2>
 		<div>
 			<p id="cc3">
 			Patrice PERRET<br />
@@ -214,8 +216,9 @@
 			<p id="cc4">
 			Mobile : 06 09 11 59 81<br />
 			Professionnel : 04 67 14 41 54<br />
-			Courriel : hp.perret [@] gmail.com<br />
+			Courriel : <a class="mail" href="mailto:hp.perret|gmail.com">hp.perret|gmail.com </a><br />
 			</p>
+			<p class="tel"><a href="tel:0609115981"><img src="./img/mobile.png" alt="Me contacter par téléphone" title="Me contacter par téléphone"/></a></p>
 		</div>
 	</footer>
 </div>
@@ -223,7 +226,6 @@
 <script type="text/javascript"> 
 
 $(document).ready(function(){
-	//$("#bth").trigger("click");
 	$("#bth").addClass('active');
 	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5").hide();
 });
@@ -276,6 +278,18 @@ $( "#btcontact" ).click(function() {
 	$( "#motivation, #competences, #portfolio" ).hide( 500 );
 	$( "#contact_c, #cc3" ).show( 500 );
 });
+
+function antiMailSpam(){
+    $("a.mail").each(function(){
+        var href = $(this).attr('href');
+        if(href.indexOf('mailto:')!=-1){
+            href = href.replace('|','@');
+            var text = $(this).text().replace('|','@');
+            $(this).attr('href',href);
+            $(this).text(text);               
+        }
+    });
+}
 
 </script>
 </body>

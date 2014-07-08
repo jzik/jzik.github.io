@@ -36,9 +36,24 @@ a[id^="bc"]:hover {
     color: white;
 }
 
+.portfolio_txt h3 a:hover{
+    /*background-color: #ff9933;*/
+    color: black;
+}
+
+.portfolio_txt h3 a:hover{
+    /*background-color: #ff9933;*/
+    color: black;
+}
+
+p.tel a:hover, p.tel a:link, p.tel img:hover{
+    text-decoration: none;
+    background-color: transparent;
+}
+
 body {
 	
-	background-color: #666666;
+	background-color: #E6E6E6;
 	color: #ff9933;
 	width: 100%;
 	margin: 0 auto;
@@ -110,8 +125,7 @@ header a#contact {
     
     background-color: #E6E6E6;
     position: relative;
-    top: 2.188em; /* 35x */
-    padding-bottom: 140px;
+    top: 2.0em;
 }   
 
 #motivation h2.s_titre{
@@ -189,14 +203,13 @@ div#qrcode{
 }
 
 #competences h2{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: white;
-    position: relative;
-    /*top: 60px;*/
-    line-height: 45px;
-    font-size: 1.5em;
+  width: 100%;
+margin: 3px auto 20px;
+text-align: center;
+background-color: #FFF;
+position: relative;
+line-height: 25px;
+font-size: 1em;
 }
 
 .progress {
@@ -260,6 +273,10 @@ div#qrcode{
 /*  PORTFOLIO   */
 /* ***********  */
 
+.portfolio_img{
+    display: none;
+}
+
 #portfolio{
     
     width: 100%;
@@ -268,14 +285,14 @@ div#qrcode{
 }    
 
 #portfolio > h2{
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 3px auto;
     text-align: center;
     background-color: white;
     position: relative;
-    top: 60px;
-    line-height: 45px;
-    font-size: 1.5em;
+    /*top: 60px;*/
+    line-height: 25px;
+    font-size: 1em;
 }
 
 div.site{
@@ -293,7 +310,7 @@ div.portfolio_site{
     width: 80%;
     margin: 0 auto;
     position: relative;
-    top: 60px;
+    /*top: 60px;*/
 }
 
 div.portfolio_img img{
@@ -317,11 +334,12 @@ div.portfolio_txt{
 }
 
 div#patguitar h3, div#jzik h3, div#artmetal h3, div#lola h3{
-    width: 90%;
+    /*width: 90%;*/
     margin: 0 auto;
     background-color: white;
     line-height: 25px;
     padding-left: 10px;
+    text-align: center;
 }
 
 div.portfolio_txt p{
@@ -332,6 +350,10 @@ div.portfolio_txt p{
     text-align: left;
     height: 7em;
     font-size: 0.9em;
+}
+
+#lola div.portfolio_site div.portfolio_txt p{
+     height: 13em;
 }
 
 @media (min-width: 660px) and (max-width: 860px) {
@@ -419,6 +441,7 @@ div.portfolio_txt p{
          div.portfolio_txt{
          float: none; 
          width: 97%;
+         height: auto;
      }
      
     div.portfolio_img img {
@@ -432,7 +455,7 @@ div.portfolio_txt p{
     div.portfolio_txt p{
         width: 90%;
         background-color: #CCC;
-        padding: 18px 20px 0;
+        padding: 18px 16px 0;
         color: black;
         text-align: left;
         height: 7em;
@@ -471,10 +494,10 @@ footer#contact_c p#cc3, footer#contact_c p#cc4{
     width: 80%;
     margin: 0 auto;
     background-color: #CCC;
-    padding: 80px 20px 0;
+    padding: 70px 20px 0;
     color: black;
     text-align: left;
-    height: 7em;
+    height: 6em;
     font-size: 0.9em;
 }
 
@@ -483,7 +506,25 @@ footer#contact_c p#cc4{
 }
 
 
+p.tel{
+    
+    margin-top: 7px;
+    text-align: center;
+}
 
+p.tel img{
+    width: 50px;
+}
 
+a.mail:link{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
 
+a.mail:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
 
