@@ -582,7 +582,17 @@ p.tel a:hover, p.tel a:link, p.tel img:hover{
     background-color: transparent;
 }
 
+a.mail:link{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
 
+a.mail:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
 
 
 

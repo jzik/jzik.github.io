@@ -489,3 +489,14 @@ p.tel img{
     width: 50px;
 }
 
+a.mail:link{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+a.mail:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
