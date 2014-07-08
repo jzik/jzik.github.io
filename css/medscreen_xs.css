@@ -121,6 +121,65 @@ header a#contact {
 .social-links  {
     display: none;
 }
+
+
+/* ************* */
+/* Social links */
+/* ************* */
+
+.social-links_c  {
+    margin: 0 15px 0 0;
+    text-align: right;
+    display: block;
+    position: fixed;
+    top: 35px;
+    right: -10px;
+}
+.social-links_c ul{
+  font-size: 0;
+}
+
+
+.social-links_c li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+ul.social-links_c a{
+    padding: 0;
+    margin: 0;
+}
+
+
+.ie67 .social-links_c li {
+   display: inline;
+    zoom: 1;
+}
+
+.social-links_c a {
+  display: block;
+  width: 30px;
+  height: 34px;
+  background-image: url("../img/sprite_sl.jpg");
+  background-repeat: no-repeat;
+}
+
+.social-links_c a.facebook {
+  background-position: 0 0;
+}
+
+.social-links_c a.pinterest {
+  background-position: -68px 0;
+}
+
+.social-links_c a.twitter {
+  background-position: -34px 0;
+}
+
+.social-links_c a.linkedin {
+  background-position: -102px 0;
+}
 #motivation, #competences, #portfolio, #contact_c{
     
     background-color: #E6E6E6;

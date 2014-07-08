@@ -500,3 +500,8 @@ a.mail:hover{
     background-color: transparent;
     color: white;
 }
+
+.social-links_c{
+    
+    display: none;
+}
