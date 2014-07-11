@@ -62,8 +62,11 @@ body {
 
 #main{
 	background-color: black;
-	
 }
+
+/* ************* */
+/*    HEADER     */
+/* ************* */
 
 header{
 	
@@ -118,14 +121,13 @@ header a#contact {
 }
 
 
-.social-links  {
-    display: none;
-}
-
-
 /* ************* */
 /* Social links */
 /* ************* */
+
+.social-links  {
+    display: none;
+}
 
 .social-links_c  {
     margin: 0 15px 0 0;
@@ -139,18 +141,15 @@ header a#contact {
   font-size: 0;
 }
 
-
 .social-links_c li {
   display: inline-block;
   margin-right: 5px;
 }
 
-
 ul.social-links_c a{
     padding: 0;
     margin: 0;
 }
-
 
 .ie67 .social-links_c li {
    display: inline;
@@ -180,6 +179,11 @@ ul.social-links_c a{
 .social-links_c a.linkedin {
   background-position: -102px 0;
 }
+
+/* ************** */
+/*   MOTIVATION   */
+/* ************** */
+
 #motivation, #competences, #portfolio, #contact_c{
     
     background-color: #E6E6E6;
@@ -197,7 +201,6 @@ ul.social-links_c a{
 #br{
     display: inline;
 }
-
 
 #motivation h3{
     text-align: center;
@@ -217,13 +220,11 @@ background-color: #1C1C1C;
 line-height: 1.7em;
 }
 
-
 div#main header h1 a{
 	text-decoration: none;
 	background-color: transparent;
 	color: #ff9933;
 }
-
 
 div#moi{
     width: 100%;
@@ -242,12 +243,16 @@ div#qrcode{
     display: none; 
 }
 
-#cv{
-    color: #666;
-    margin-top: 20px;
-    text-align: center;
+div#cv {
+   padding-top: 15px;
+   text-align: center;
 }
 
+div#cv a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
 
 
 /* *************  */
@@ -301,7 +306,7 @@ font-size: 1em;
     font-size: 0.8em;
 }
 
- a#bc1 span#comp1, a#bc2 span#comp2, a#bc3 span#comp3, a#bc4 span#comp4, a#bc5 span#comp5{
+ a#bc1 span#comp1, a#bc2 span#comp2, a#bc3 span#comp3, a#bc4 span#comp4, a#bc5 span#comp5, a#bc6 span#comp6{
         width: 100%;
     }
     
@@ -337,7 +342,6 @@ font-size: 1em;
 }
 
 #portfolio{
-    
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -563,7 +567,6 @@ footer#contact_c p#cc3, footer#contact_c p#cc4{
 footer#contact_c p#cc4{
     padding-top: 0;
 }
-
 
 p.tel{
     

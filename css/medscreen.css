@@ -252,14 +252,13 @@ div#moiimg img{
 
 div#qrcode h3#vm{
     font-size: 0.9em;
-    margin-top: 60px;
-    margin-left: 31px;
-    text-align: left;
+    margin-top: 30px;
 }
 
 div#qrcode{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 10px;
+	text-align: center;
 }
 
 div#qrcode{
@@ -268,15 +267,16 @@ div#qrcode{
 
 div#qrcode img{
     width: 10%;
-    padding-left: 30px;
-    margin-bottom: -60px;
 }
 
-#cv{
-    float: right;
-    margin-right: 30px;
-    color: #666;
-    margin-top: 30px;
+div#cv {
+   padding: 10px;
+}
+
+div#cv a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
 }
 
 #br{
@@ -350,6 +350,11 @@ a#bc5 span#comp5{
     width: 65%;
 }
 
+a#bc6 span#comp6{
+    
+    width: 50%;
+}
+
 .progress ul {
     padding: 10px 0 10px 20px;
     margin-left: 20px;
@@ -359,6 +364,7 @@ a#bc5 span#comp5{
 .progress ul li{
     list-style: square;
 }
+
 /* ***********  */
 /*  PORTFOLIO   */
 /* ***********  */
@@ -502,6 +508,5 @@ a.mail:hover{
 }
 
 .social-links_c{
-    
     display: none;
 }

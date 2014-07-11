@@ -2,8 +2,9 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Patrice - LPATC15</title>
+<title>Patrice PERRET - Portfolio Online</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name = "format-detection" content = "telephone=no" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,500' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,7 +15,6 @@
 <body>
 <div id="main">
 	<header>
-		<!--  <h1><span><a href="#">Patrice_PERRET.cv</a><img class="menu_s" src="./svg/untitled.svg" /></span></h1>-->
 		<h1 id="logo"><a href="#">Patrice-PERRET.cv</a></h1>
 		<ul id="menu">
 			<li><a href="#" id="bth" tabindex="0">Accueil</a></li>
@@ -23,14 +23,17 @@
 			<li><a href="#contact_c" id="btcontact" tabindex="3">Contact</a></li>
 		</ul>
 		<ul class="social-links">
-			<li><a href="http://www.facebook.com" class="facebook"></a></li>
-			<li><a href="#" class="pinterest"></a></li>
-			<li><a href="#" class="twitter"></a></li>
+			<li><a href="https://www.facebook.com/reseauweb" class="facebook" target="_blank"></a></li>
+			<li><a href="http://fr.pinterest.com/reseauweb/reseauweb/" class="pinterest" target="_blank"></a></li>
+			<li><a href="https://twitter.com/reseauweb" class="twitter" target="_blank"></a></li>
 			<li><a href="#" class="linkedin"></a></li>
 		</ul>
 	</header>
 	<div class="clearfix"></div>
 	<section id="motivation">
+		<div id="cv">
+			 <a href="./patrice-perret-cv.pdf"><img id="pdf" src="img/pdf_s.png" alt="CV - Curiculum vitAe de Patrice PERRET format pdf à télécharger" title="CV - Curriculum vitae de Patrice PERRET format pdf"/> CV à télécharger</a> 
+		</div>
 		<h2 class="s_titre">Chef de projet Web</h2>
 		<h3>Intégrateur développeur<span id="br"><br /></span> frontend - backend</h3>
 			<p>
@@ -42,13 +45,10 @@
 			</div>
 		</div>
 		<div id="qrcode">
-			<h3 id="vm">Version mobile</h3>
+			<h3 id="vm">Consulter sur mobile<br />la version Responsive design</h3>
 			<div id="qrcodeimg">
-				<img src="./img/qrcode.jpg" alt="Qrcode d'accès à la version mobile" />
+				<img src="./img/qrcode.png" alt="Qrcode d'accès à la version mobile" />
 			</div>
-		</div>
-		<div id="cv">
-			CV à télécharger  <a href="#"><img id="pdf" src="img/pdf_s.png" alt="CV - Curiculum viate de Patrice PERRET format pdf à télécharger" title="CV - Curriculum vitae de Patrice PERRET format pdf"/></a>
 		</div>
 	</section>
 	<section id="competences">
@@ -57,9 +57,9 @@
 			<a href="#" id="bc1"><span id="comp1" class="bar">Ingénierie du web &#9660;</span></a>
 			
 				<ul id="c1">
-					<li>Maîtrise de l'ingénierie du web</li>
+					<li>Très bonne connaissance de l'ingénierie du web</li>
 					<li>Gestion des noms de domaines (dns)</li>
-					<li>Technologies réseaux</li>
+					<li>Technologies et architectures réseaux</li>
 					<li>Solution d'hébergement / clustering</li>
 					<li>Système d'information</li>
 					<li>Sécurité du Système d'Information</li>
@@ -77,16 +77,19 @@
 			<a href="#" id="bc2"><span id="comp2" class="bar">Gestion de projet &#9660;</span></a>
 				<ul id="c2">
 					<li>Management de projet</li>
+					<li>Gestion de budget</li>
+					<li>Rédaction de cahier des charges</li>
 					<li>Maîtrise d'ouvrage / d'oeuvre (web)</li>
 					<li>Méthode eXtreme programming</li>
 					<li>Ergonomie</li>
-					<li>Cahier des charges</li>
+					<li>IHM - Interface Homme Machine</li>
 					<li>Modélisation de projet</li>
 				</ul>
 			</div>
 		<div class="progress">
 			<a href="#" id="bc3"><span id="comp3" class="bar">Développement web &#9660;</span></a>
 			<ul id="c3">
+					<li>Administration de base de données</li>
 					<li>Développement PHP, procédural, POO</li>
 					<li>Framework PHP (Symfony, CodeIgniter)</li>
 					<li>Javascript et bibliothèques</li>
@@ -106,7 +109,6 @@
 			<ul id="c4">
 					<li>Changement d'hébergement</li>
 					<li>Récupération de données</li>
-					<li>Refonte de site</li>
 					<li>Ajout de nouvelles fontionnalités</li>
 					<li>Optimisation / Correction de bug</li>
 					<li>Responsive design</li>
@@ -117,18 +119,27 @@
 		</div>
 		<div class="progress">
 			<a href="#" id="bc5"><span id="comp5" class="bar">Administration de serveur web &#9660;</span></a>
-			<ul id="c5">
+				<ul id="c5">
 					<li>Installation / Configuration (Debian)</li>
-					<li>Ligne de commande</li>
-					<li>Serveur LAMP</li>
-					<li>Sécurité</li>
+					<li>Installation et paramétrage serveur LAMP</li>
+					<li>Sécurisation de serveur web</li>
 					<li>Taches CRON</li>
 					<li>Sauvegarde / rsync</li>
-					<li>Script shell</li>
+					<li>Scripts shell</li>
 					<li>Veille technologique</li>
 					<li>Veille sécuritaire</li>
 					<li>Panel d'administration</li>
-					</ul>
+				</ul>
+		</div>
+		<div class="progress">
+			<a href="#" id="bc6"><span id="comp6" class="bar">Webdesign &#9660;</span></a>
+				<ul id="c6">
+					<li>Intégration HTML & CSS responsive design</li>
+					<li>Création de charte graphique</li>
+					<li>Photoshop, Illustrator</li>
+					<li>Optimisation images / vidéos</li>
+					<li>Respect des standards W3C</li>
+				</ul>
 		</div>
 	</section>
 	<section id="portfolio">
@@ -139,7 +150,7 @@
 					<img src="./img/patguitar.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
 				</div>
 				<div class="portfolio_txt">
-					<h3><a href="#">Patguitar</a></h3>
+					<h3><a href="http://www.patguitar.com/" target="_blank" >Patguitar</a></h3>
 					<p>
 						Site de vente de guitares de collection.<br />
 						html / css / javascript, pas de base de données<br />
@@ -156,7 +167,7 @@
 					<img src="./img/jzik.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
 				</div>
 				<div class="portfolio_txt">
-					<h3><a href="#">Jzik</a></h3>
+					<h3><a href="http://www.jzik.fr/" target="_blank" >Jzik</a></h3>
 					<p>
 						Site @commerce de petites annonces spécialisées musique.<br />
 						Paiement en ligne (CIC / Paypal)<br />
@@ -174,7 +185,7 @@
 				<img src="./img/artmetal.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
 			</div>
 			<div class="portfolio_txt">
-			<h3><a href="#">Art Metal Nîmes</a></h3>
+			<h3><a href="http://www.art-metal-pere-fils.fr/" target="_blank" >Art Metal Nîmes</a></h3>
 			<p>
 				Site vitrinne pour une ferronerie / métallerie.<br />
 				html5 / css3 / php5 / mysql / jQuery<br />
@@ -191,7 +202,7 @@
 				<img src="./img/lola.jpg" alt="Site de Patguitar" title="Site de Patguitar" /> 
 			</div>
 			<div class="portfolio_txt">
-			<h3><a href="#">Lola (LOgistique LAboratoire)</a></h3>
+			<h3><a href="#">Lola (LOgistique LAboratoire - Accès restreint)</a></h3>
 			<p>
 				Outil de travail collaboratif du laboratoire CNRS Géosciences de Montpellier.<br />
 				xhtml 1.0 strict / css3 / php5 / mysql / jQuery<br />
@@ -232,7 +243,7 @@
 
 $(document).ready(function(){
 	$("#bth").addClass('active');
-	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5").hide();
+	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5, ul#c6").hide();
 });
 
 $("ul[id^=menu] a").click(function(){
@@ -242,7 +253,7 @@ $("ul[id^=menu] a").click(function(){
 
 $( "#bth, #logo" ).click(function() {
 	$( "#motivation" ).show( 500 );
-	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5").hide();
+	$("#competences, #contact_c, #portfolio, ul#c1, ul#c2, ul#c3, ul#c4, ul#c5, ul#c6").hide();
 	$('#menu .active').removeClass('active');
 	$("#bth").addClass('active');
 });
@@ -261,22 +272,32 @@ $( "#bc1" ).click(function() {
 	$( "ul#c1" ).toggle( "slow" );
 	$( "#motivation" ).hide( 500 );
 	$("#btcomp").trigger("click");
+	$("ul#c2, ul#c3, ul#c4, ul#c5, ul#c6").hide();
 });
 
 $( "#bc2" ).click(function() {
 	$( "ul#c2" ).toggle( "slow" );
+	$("ul#c1, ul#c3, ul#c4, ul#c5, ul#c6").hide();
 });
 
 $( "#bc3" ).click(function() {
 	$( "ul#c3" ).toggle( "slow" );
+	$("ul#c1, ul#c2, ul#c4, ul#c5, ul#c6").hide();
 });
 
 $( "#bc4" ).click(function() {
 	$( "ul#c4" ).toggle( "slow" );
+	$("ul#c1, ul#c2, ul#c3, ul#c5, ul#c6").hide();
 });
 
 $( "#bc5" ).click(function() {
 	$( "ul#c5" ).toggle( "slow" );
+	$("ul#c1, ul#c2, ul#c3, ul#c4, ul#c6").hide();
+});
+
+$( "#bc6" ).click(function() {
+	$( "ul#c6" ).toggle( "slow" );
+	$("ul#c1, ul#c2, ul#c3, ul#c4, ul#c5").hide();
 });
 
 $( "#btcontact" ).click(function() {
@@ -284,6 +305,8 @@ $( "#btcontact" ).click(function() {
 	$( "#contact_c, #cc3" ).show( 500 );
 });
 
+
+//http://www.xumi.fr/articles/proteger-ses-adresses-mail-du-spam-avec-javascript-jquery
 function antiMailSpam(){
     $("a.mail").each(function(){
         var href = $(this).attr('href');
@@ -293,6 +316,24 @@ function antiMailSpam(){
             $(this).attr('href',href);
             $(this).text(text);               
         }
+    });
+}
+
+
+// http://stackoverflow.com/questions/4268413/disable-telephone-number-detection-on-ipad-desktop-web-links
+
+if (navigator.userAgent.match(/(iPhone|Android|BlackBerry)/)) {
+//this is the phone
+
+} else if (navigator.userAgent.match(/(iPod|iPad)/)) {
+    $('a[href^=tel]').click(function(e){
+       e.preventDefault();
+    });
+} else {
+ //this is the browser
+
+    $('a[href^=tel]').click(function(e){
+        e.preventDefault();
     });
 }
 
