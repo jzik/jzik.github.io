@@ -189,6 +189,7 @@ ul.social-links_c a{
     background-color: #E6E6E6;
     position: relative;
     top: 2.0em;
+    padding-bottom: 100px;
 }   
 
 #motivation h2.s_titre{
@@ -365,8 +366,17 @@ div.site{
     top: 50px;
 }
 
+div#patguitar{
+     height: 152px;
+}
+
+
 div#jzik{
-     top: 60px;
+     height: 185px;
+}
+
+div#artmetal{
+     height: 160px;
 }
 
 div.portfolio_site{
@@ -393,7 +403,7 @@ div.portfolio_txt{
     margin-right: 20px;
     color: black;
     text-align: left;
-    height: 11em;
+    /*height: 11em;*/
 }
 
 div#patguitar h3, div#jzik h3, div#artmetal h3, div#lola h3{
@@ -416,7 +426,7 @@ div.portfolio_txt p{
 }
 
 #lola div.portfolio_site div.portfolio_txt p{
-     height: 13em;
+     /*height: 13em;*/
 }
 
 @media (min-width: 660px) and (max-width: 860px) {
@@ -504,7 +514,7 @@ div.portfolio_txt p{
          div.portfolio_txt{
          float: none; 
          width: 97%;
-         height: auto;
+         /*height: auto;*/
      }
      
     div.portfolio_img img {
@@ -521,8 +531,8 @@ div.portfolio_txt p{
         padding: 18px 16px 0;
         color: black;
         text-align: left;
-        height: 7em;
         font-size: 0.8em;
+        height: 150px;
     }
     
 }
@@ -539,7 +549,7 @@ footer{
 }
 
 footer#contact_c{
-    
+    padding-bottom: 0;
 }
 
 footer#contact_c h2 {
@@ -560,7 +570,7 @@ footer#contact_c p#cc3, footer#contact_c p#cc4{
     padding: 70px 20px 0;
     color: black;
     text-align: left;
-    height: 6em;
+    height: 5em;
     font-size: 0.9em;
 }
 

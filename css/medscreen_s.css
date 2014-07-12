@@ -120,11 +120,12 @@ div#main header h1 a{
 /* ************* */
 
 .social-links  {
-    margin: 10px 15px 0 0;
-    text-align: right;
-    display: block;
-/*float: right;**/
+    margin: 10px 10px 0 0;
+    display: inline-block;
+    width: 150px;
+    float: right;
 }
+
 .social-links ul{
   font-size: 0;
 }
@@ -253,6 +254,8 @@ div#qrcode img{
 
 div#cv {
    padding: 10px;
+   margin-top: -18px;
+  
 }
 
 div#cv a:hover{
